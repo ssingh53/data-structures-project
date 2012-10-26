@@ -1,5 +1,6 @@
 Project (Data Structures)
 
+Group I must communicate with group II. Group two must communicate with group I and III. Group III must communicate with group II and Group IV. Group IV must communicate with group III.
 
 Group I:
 

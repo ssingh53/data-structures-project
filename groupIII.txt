@@ -1,0 +1,18 @@
+Group III topics
+
+Names:
+
+
+  I. Object Oriented Design
+	a. Software Life Cycle
+	b. Discover Classes
+	c. Relationships between Classes
+	d. Case Studies should be presented in class with UML
+
+  II. Multithreading
+	a. Running Threads 
+	b. Terminating Threads
+	c. Race Conditions
+	d. Synchronizing Object Access
+	e. Avoiding Deadlocks
+	f. Multithreading should be covered with interfaces chapter(remember to design everything using UML)
