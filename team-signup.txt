@@ -1,0 +1,100 @@
+Project (Data Structures)
+
+
+Group I:
+
+Names:
+
+
+Topics:
+
+Interface and Polymorphism:
+Using Interfaces for Code Reuse
+Converting Between Class and Interface Types
+Polymorphism
+Using Interfaces for Callbacks
+Inner Classes
+All topics are done with UML
+
+Inheritance:
+Introduction to Inheritance
+Inheritance Hierarchies
+Inheriting Instance Fields and Methods
+Subclass Construction
+Converting Between Subclass and Superclass Types
+Polymorphism
+All topics are done with UML
+
+Group II:
+
+Names:
+  -Alex Sheehan
+  -Carlos
+  -Chris
+  -Mir
+  -Francis
+
+  (do we need a 6th?)
+
+Topics:
+
+Exception Handling:
+Throwing Exceptions
+Checked and Unchecked Exceptions
+Catching Exceptions
+The Finally Clause
+Designing Your Own Exception Types
+All topics are done with UML
+
+
+Files and Streams:
+Reading and Writing Text Files
+Text and Binary Formats
+Random Access
+Object Streams
+All topics are done with UML
+
+
+
+Group III:
+
+Names:
+
+
+
+Topics:
+
+Object Oriented Design:
+Software Life Cycle
+Discover Classes
+Relationships between Classes
+Case Studies should be presented in class with UML
+
+Multithreading:
+Running Threads 
+Terminating Threads
+Race Conditions
+Synchronizing Object Access
+Avoiding Deadlocks
+Multithreading should be covered with interfaces chapter
+
+Group IV:
+
+Names:
+
+
+
+Topics:
+
+Recursion:
+Intro to Recursion
+Permutations
+Recursive Helper Methods
+The Efficiency of Recursion
+Mutual Recursion
+
+Group I must communicate with group II. Group two must communicate with group I and III. Group III must communicate with group II and Group IV. Group IV must communicate with group III.
+
+
+
+
