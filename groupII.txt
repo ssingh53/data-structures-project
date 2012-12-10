@@ -16,8 +16,8 @@ Group II is:
 	f. All Topics are Done with UML
 
   II. Files and Streams
-	a. Reading and Writing Text Files
-	b. Text and Binary Formats
+	a. Reading and Writing Text Files (Alex)
+	b. Text and Binary Formats (Alex)
 	c. Random Access
 	d. Object Stream
 	e. All Topics are Done with UML
