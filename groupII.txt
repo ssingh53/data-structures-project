@@ -8,7 +8,7 @@ Group II is:
 -Mir
 
   I. Exception Handling
-	a. Throwing Exceptions
+	a. Throwing Exceptions (Alex)
 	b. Checked and Unchecked Exceptions
 	c. Catching Exceptions
 	d. The Finally Clause
@@ -17,7 +17,7 @@ Group II is:
 
   II. Files and Streams
 	a. Reading and Writing Text Files (Alex)
-	b. Text and Binary Formats (Alex)
+	b. Text and Binary Formats
 	c. Random Access
 	d. Object Stream
 	e. All Topics are Done with UML
