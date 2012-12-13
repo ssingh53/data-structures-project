@@ -9,15 +9,15 @@ Group II is:
 
   I. Exception Handling
 	a. Throwing Exceptions (Alex)
-	b. Checked and Unchecked Exceptions
-	c. Catching Exceptions
-	d. The Finally Clause
-	e. Designing Your Own Exception Type
+	b. Checked and Unchecked Exceptions (carlos)
+	c. Catching Exceptions (Francis)
+	d. The Finally Clause (chris)
+	e. Designing Your Own Exception Type (Mir)
 	f. All Topics are Done with UML
 
   II. Files and Streams
 	a. Reading and Writing Text Files (Alex)
-	b. Text and Binary Formats
-	c. Random Access
-	d. Object Stream
+	b. Text and Binary Formats (carlos)
+	c. Random Access (Francis)
+	d. Object Stream (Chris)
 	e. All Topics are Done with UML
