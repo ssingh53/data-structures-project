@@ -1,10 +1,14 @@
 Group IV topics
 
 Names:
+	Deven
+	Emmanuel
+	Pabel
+	Shawn
 
   I. Recursion
-	a. Intro to Recursion
-	b. Permutations
-	c. Recursive Helper Methods
-	d. The Efficiency of Recursion
-	e. Mutual Recursion(remember to design everything using UML)
+	a. Intro to Recursion (Shawn)
+	b. Permutations (Deven)
+	c. Recursive Helper Methods  (Pabel)
+	d. The Efficiency of Recursion (Emmanuel)
+	e. Mutual Recursion(remember to design everything using UML) ()
