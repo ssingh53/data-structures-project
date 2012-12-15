@@ -1,0 +1,597 @@
+{\rtf1\ansi\deff0\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\fmodern\fprq1\fcharset0 Courier New;}{\f4\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f5\fmodern\fprq1\fcharset0 NSimSun;}{\f6\fnil\fprq2\fcharset0 Mangal;}{\f7\fnil\fprq0\fcharset0 Mangal;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033 Normal;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\dbch\af4\dbch\af6\afs28\loch\f2\fs28 Heading;}
+{\s16\sbasedon0\snext16\sb0\sa120 Text body;}
+{\s17\sbasedon16\snext17\sb0\sa120\dbch\af7 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af7\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af7 Index;}
+{\s20\sbasedon0\snext20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20 Preformatted Text;}
+}{\info{\creatim\yr2012\mo12\dy14\hr14\min21}{\revtim\yr2012\mo12\dy14\hr15\min13}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern3600}}\deftab709
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\rtlch \ltrch\loch
+Files and Streams: Text and Binary Formats}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\rtlch \ltrch\loch
+Carlos Perez }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\rtlch \ltrch\loch
+0706684}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033\rtlch \ltrch\loch
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b\afs30\ab\rtlch \ltrch\loch\fs30
+When reading and writing text files}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-}{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+Its a good idea to use buffering }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-When possible use references to abstract classes instead of concrete classes}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-Pay attention to exceptions particularly IOException and fileNotFoundException.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b\afs30\ab\rtlch \ltrch\loch\fs30
+The close Method}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-Must always be called otherwise resources will leak.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-Called automatically in JDK 7 with try/with resources.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-Calling a close on a wrapper will automatically call a close on its underlying stream.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-Closing a stream a second time results in no consequences.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-When closed on a scanner, the close operation will only work if passed on the constructor that implements closeable.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b\afs30\ab\rtlch \ltrch\loch\fs30
+Commonly Used Items}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-Scanner- allows reading files in anyway}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-BufferedReader- read line}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+-BufferedWriter- write and write newline}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033\afs24\rtlch \ltrch\loch\fs24
+
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033{\b\afs30\ab\rtlch \ltrch\loch\fs30
+Example Reading(FileReader) and Writing Text(FileWriter) files}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+This code fetches the entire contents of the text file and returns it in a string; Then allows for the programmer to change the contents of the file completely.}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+import}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ java.io.*;}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//}{\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Courtesy of JavaPractices.com  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public class ReadWriteTextFile \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+static}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ String getContents(File aFile) \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+StringBuilder contents = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ StringBuilder();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+try}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+BufferedReader input =  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ BufferedReader(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileReader(aFile));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+try}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+        }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+String line = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+null}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+; }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+     }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+        }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+while}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ (( line = input.readLine()) != }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+null}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+)\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+          }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+contents.append(line);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+          }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+contents.append(System.getProperty(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"line.separator"}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+        }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+finally}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+        }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+input.close();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+catch}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ (IOException ex)\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ex.printStackTrace();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+return}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ contents.toString();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+static}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+void}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ setContents(File aFile, String aContents)}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+                                 }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throws}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileNotFoundException, IOException \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+if}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ (aFile == }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+null}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+) \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throw}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ IllegalArgumentException(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"File should not be null."}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+if}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ (!aFile.exists()) \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throw}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileNotFoundException (}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"File does not exist: "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + aFile);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+if}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ (!aFile.isFile()) \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throw}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ IllegalArgumentException(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"Should not be a directory: "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + aFile);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+if}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ (!aFile.canWrite()) \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throw}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ IllegalArgumentException(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"File cannot be written: "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + aFile);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Writer output = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ BufferedWriter(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileWriter(aFile));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+try}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+output.write( aContents );}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+finally}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+output.close();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+static}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+void}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ main (String... aArguments) }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throws}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ IOException \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+File testFile = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ File(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"C:\\\\Temp\\\\blah.txt"}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+System.out.println(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"Original file contents: "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + getContents(testFile));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+setContents(testFile, }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"The content of this file has been overwritten..."}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+System.out.println(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"New file contents: "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + getContents(testFile));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\sb0\sa283{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\} }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\aspalpha\ltrpar\cf0\kerning1\dbch\af8\langfe2052\dbch\af6\afs24\alang1081\loch\f0\fs24\lang1033\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20{\cf1\b\afs30\ab\rtlch \ltrch\loch\fs30\loch\f0
+Example of Scanner}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20{\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+The scanner in this example is used to read the file in a structured manner; each line is then broken down using a second scanner and ordered using a delimiter to separate numbers.  The scanner can only read not write.}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+import}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ java.io.*;}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+import java.util.Scanner;}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Courtesy of JavaPractices.com}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public class ReadWithScanner \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\cf1\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+static}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+void}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ main(String... aArgs) }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throws}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileNotFoundException \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ReadWithScanner parser = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ ReadWithScanner(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"C:\\\\Temp\\\\test.txt"}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+parser.processLineByLine();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+log(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"Done."}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+/**}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Constructor.}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+@param aFileName full name of an existing, readable file.}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+*/}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ ReadWithScanner(String aFileName)\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+fFile = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ File(aFileName);  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+/** Template method that calls \{@link #processLine(String)\}.  */}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+public}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+final}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+void}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ processLineByLine() }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+throws}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileNotFoundException \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//Note that FileReader is used, not File, since File is not Closeable}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Scanner scanner = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ Scanner(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ FileReader(fFile));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+try}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//first use a Scanner to get each line}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+while}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ ( scanner.hasNextLine() )\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+        }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+processLine( scanner.nextLine() );}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+finally}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//ensure the underlying stream is always closed}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//this only has any effect if the item passed to the Scanner}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//constructor implements Closeable (which it does in this case).}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+scanner.close();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+/** }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Overridable method for processing lines in different ways.}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+<P>This simple default implementation expects simple name-value pairs, separated by an }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+'=' sign. Examples of valid input : }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+<tt>height = 167cm</tt>}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+<tt>mass =  65kg</tt>}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+<tt>disposition =  "grumpy"</tt>}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+   }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+<tt>this is the name = this is the value</tt>}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+*/}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+protected}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+void}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ processLine(String aLine)\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//use a second Scanner to parse the content of each line }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+Scanner scanner = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+new}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ Scanner(aLine);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+scanner.useDelimiter(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"="}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+if}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ ( scanner.hasNext() )\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+String name = scanner.next();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+String value = scanner.next();}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+log(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"Name is : "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + quote(name.trim()) + }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+", and Value is : "}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ + quote(value.trim()) );}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+else}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ \{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+      }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+log(}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"Empty or invalid line. Unable to process."}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+);}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+//no need to call scanner.close(), since the source is a String}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+// PRIVATE }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+private}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+final}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ File fFile;}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+private}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+static}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+void}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ log(Object aObject)\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+System.out.println(String.valueOf(aObject));}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+private}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ String quote(String aText)\{}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+String QUOTE = }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+"'"}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+;}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+    }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+return}{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+ QUOTE + aText + QUOTE;}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar{\scaps0\caps0\cf1\expnd0\expndtw0\b0\afs24\ab0\rtlch \ltrch\fs24\loch\f0
+  }{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\}}
+\par \pard\plain \s20\sb0\sa0\dbch\af5\dbch\af3\afs20\loch\f3\fs20\qj\widctlpar\sb0\sa283{\scaps0\caps0\cf1\expnd0\expndtw0\i0\b0\afs24\ab0\rtlch \ltrch\loch\fs24\loch\f0
+\} }
+\par \pard\plain \s16\sb0\sa120\sb0\sa120{\rtlch \ltrch\loch
+\line }
+\par }
